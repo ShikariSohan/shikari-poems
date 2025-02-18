@@ -1,59 +1,61 @@
-# ShikariPoems
+# 📚 শিকারি কবি হলে কি লিখতো?
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+Welcome to **শিকারি কবি হলে কি লিখতো?** – a poetry book app where sarcasm meets Bangla poetry. This isn't your average "ফুল, চাঁদ, তারা" kinda vibe – here the hunter (শিকারি) spills verses sharper than arrows. And guess what? It's built with **Angular** – because why not add some extra spice?
 
-## Development server
+## 🏹 What is this?
 
-To start a local development server, run:
+An interactive digital poetry book where you navigate through pages filled with Bangla poems. Each page is a custom Angular component because shikaris like their poems well-organized and ready to fire.
 
-```bash
-ng serve
-```
+## 🎯 Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Dynamic Pages:** Every poem lives in its own Angular component – because each verse deserves the spotlight.
+- **Bangla Support:** Yup, full-on Bangla goodness without breaking a sweat.
+- **Navigation:** Go back and forth through the poems like a pro hunter tracking prey.
+- **Animation Magic:** Smooth page transitions with the elegance of a shikari on the prowl.
 
-## Code scaffolding
+## 🔧 Setup & Run
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Wanna run this poetry madness? Follow these steps:
 
-```bash
-ng generate component component-name
-```
+1. Clone the repo (no actual hunting required):
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+   ```bash
+   git clone https://github.com/your-repo/shikari-kobi.git
+   cd shikari-poems
+   ```
 
-```bash
-ng generate --help
-```
+2. Install dependencies (it’s easier than catching a fish):
 
-## Building
+   ```bash
+   pnpm install
+   ```
 
-To build the project run:
+3. Launch the app (cue the poetic drumroll):
 
-```bash
-ng build
-```
+   ```bash
+   pnpm ng serve
+   ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+4. Open your browser and hit:
 
-## Running unit tests
+   ```bash
+   http://localhost:4200
+   ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📖 Adding New Poems
 
-```bash
-ng test
-```
+1. Create a new Angular component for your poem (because poems deserve their own space):
 
-## Running end-to-end tests
+   ```bash
+   pnpm ng generate component pages/your-poem-name
+   ```
 
-For end-to-end (e2e) testing, run:
+2. Import your component into the main poetry book and add it to the page list.
 
-```bash
-ng e2e
-```
+## 🧐 Why Angular?
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Because when a shikari builds an app, they don’t settle for less. Plus, who doesn’t love a good component tree, right?
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+✨ **Happy Hunting, ShikariSohan!**
