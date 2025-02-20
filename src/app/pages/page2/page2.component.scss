@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap);
+
+.poem-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("/assets/bg/page2bg.png") no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(25px);
+
+  .poem p {
+    font-family: "Baloo 2";
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: var(--color-gray-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease-in-out;
+  }
+  .border {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid #654321;
+    background-color: rgba(
+      101,
+      67,
+      33,
+      0.3
+    ); /* Added background color with 0.3 opacity */
+  }
+
+  .poem p:hover {
+    transform: translateY(-10px);
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
